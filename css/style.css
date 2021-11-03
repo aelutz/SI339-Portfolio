@@ -1,0 +1,44 @@
+/*background colors*/
+body {
+	background-color: #E4F1E9;
+  	font-size: 18px;
+  	margin: 0;
+  	padding: 0;
+}
+
+header {
+	background-color: #034039;
+  	padding: 25px 0;    
+  	text-align: left;   
+}
+/*header text and links*/
+header h1 {
+	color: white;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a:link {
+	color: white;
+}
+
+nav a:visited {
+	color:  white;
+}
+/*link colors*/
+main a:link {
+	color: #568C71;
+}
+
+main a:visited {
+	color: #568C71;
+}
+
+/*welcome-text*/
+#welcome-text {
+	text-align: center;
+}
