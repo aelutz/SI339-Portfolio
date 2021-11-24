@@ -20,24 +20,16 @@ nav {
 	justify-content: space-around;
 }
 
-/*nav a:link {
-	color: white;
-}
-
-nav a:visited {
-	color:  white;
-}*/
-
 .active {
     border: black 1px;
 }
 /*link colors*/
 main a:link {
-	color: #568C71;
+	color: #034039;
 }
 
 main a:visited {
-	color: #568C71;
+	color: #034039;
 }
 
 /*style current link*/
@@ -172,14 +164,6 @@ nav a:visited {
 
 .active {
     border: black 1px;
-}
-/*link colors*/
-main a:link {
-	color: #568C71;
-}
-
-main a:visited {
-	color: #568C71;
 }
 
 /*welcome-text*/
