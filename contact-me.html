@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-58ZRDR643G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-58ZRDR643G');
+</script>
+  <title>Contact Me</title>
+</head>
+  <a class = "skip" href="#contact-form">Skip to Main Content</a>
+<body>
+
+<header>
+
+    <h1>Contact Me</h1>
+
+    <nav>
+        <a href = "index.html" >Home</a>
+        <a href = "cat-adoption.html">Adopting a Cat</a>
+        <a href = "fun-facts.html">Fun Facts</a>
+        <a href = "my-cats.html">My Cats</a>
+        <a href = "contact-me.html" class = "current">Contact Me</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+  <h2 id = "contact-me-text">Have any questions? Fill out the form below to get in touch!</h2>
+
+<!-- flip card code from W3 Schools: https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+
+<div class = "cards">
+<div class="flip-card" tabindex="0">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/chalk-question-mark.png" alt="question mark" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="images/chalk-arrow-pointing-down.jpg" alt="down arrow" style="width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+</div>
+
+<div id = "arrow-pic-credits">
+  <a href='https://www.freepik.com/photos/arrow'>Arrow photo created by freepik - www.freepik.com</a>
+</div>
+
+<!-- contact form code from W3 Schools: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+
+  <div class="form-container" id = "contact-form">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</main>
+
+  <footer>
+    <p>Analese Lutz 2021</p>
+  </footer>
+
+
+</body>
+
+</html>
