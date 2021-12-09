@@ -1,3 +1,17 @@
+/*footer*/
+
+footer {
+	background-color: #034039;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+
+footer p {
+	color: white;
+}
+
 /*arrow pic credits*/
 
 #arrow-pic-credits {
@@ -59,8 +73,14 @@
 
 
 /*contact form*/
+
+label {
+	color: white;
+}
+
+
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
@@ -73,8 +93,8 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #f2f2f2;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -83,14 +103,15 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #d4cfcf;
 }
 
 /* Add a background color and some padding around the form */
 .form-container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #2E2E2E;
   padding: 20px;
+  margin: 40px;
 }
 
 
@@ -99,7 +120,6 @@ input[type=submit]:hover {
 
 #contact-me-text {
 	text-align: center;
-	font-size: ;
 }
 
 
@@ -205,10 +225,26 @@ nav a.current {
 	margin-bottom: 10px;
 	padding: 10px;
 	background-color: white;
-	border: 10px solid;
-	border-image: repeating-linear-gradient(45deg, turquoise, #034039 4%) 1;
+	border: 10px double #034039;
+	/*border: 10px solid;*/
+	/*border-image: repeating-linear-gradient(45deg, turquoise, #034039 4%) 1;*/
 	width: 90%;
 	height: 90%;
+}
+
+.my-cats {
+	width: 400px;
+	height: 600px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-top: 25px;
+}
+
+.my-cats img {
+	width: 70%;
+	height: 50%;
+	/*min-width: 468px;*/
+
 }
 
 .my-cats li{
@@ -299,9 +335,9 @@ nav a.current {
 /*background colors*/
 body {
 	background-color: #E4F1E9;
-  	font-size: 18px;
-  	margin: 0;
-  	padding: 0;
+  font-size: 18px;
+  font-family: Trebuchet MS, sans-serif;
+  margin: 0;
 }
 
 header {
