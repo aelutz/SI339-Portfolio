@@ -144,22 +144,9 @@ input[type=submit]:hover {
 
 }
 
-/*prefers reduced motion changes*/
-@media screen and (prefers-reduced-motion: reduce) {
-    #welcome-text {
-        animation-name: none;
-    }
-
-    .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
-    	transform: none ;
-    }
-
-}
-
-
 /*paralax image*/
 #paralax-image {  
-	background-attachment: fixed; /* Parallax effect */
+		background-attachment: fixed; /* Parallax effect */
   	background-position: center; /* Parallax effect */
   	background-size: cover; /* Parallax effect */
   	color: white;
@@ -171,6 +158,24 @@ input[type=submit]:hover {
   	background-image: url(../images/parallex-img-mobile.png);
   	background-repeat: no-repeat;
   }
+
+/*prefers reduced motion changes*/
+@media screen and (prefers-reduced-motion: reduce) {
+    #welcome-text {
+        animation-name: none;
+    }
+
+    .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+    	transform: none ;
+    }
+
+    #paralax-image {  
+		background-attachment: local; /* Parallax effect */
+  }
+
+}
+
+
 
 
 /*nav links*/
@@ -378,8 +383,17 @@ nav a:visited {
 
 @media screen and (min-width: 760px) {
 	#paralax-image {  
+		background-attachment: fixed; /* Parallax effect */
+  	background-position: center; /* Parallax effect */
+  	background-size: cover; /* Parallax effect */
+  	color: white;
   	height: 400px; /* Parallax effect */
-  	background-image: url(../images/parallex-img.png);
+
+  	/* YOUR CODE HERE; */
+  	/*grid-column: 1 / -1;*/
+  	/*grid-row: 1 / span 1;*/
+  	background-image: url(../images/parallex-img-mobile.png);
+  	background-repeat: no-repeat;
 
   }
 
@@ -459,9 +473,17 @@ nav a:visited {
 @media screen and (min-width: 1000px) {
 
 	#paralax-image {  
+  	background-attachment: fixed; /* Parallax effect */
+  	background-position: center; /* Parallax effect */
+  	background-size: cover; /* Parallax effect */
+  	color: white;
   	height: 400px; /* Parallax effect */
-  	background-image: url(../images/parallex-img.png);
 
+  	/* YOUR CODE HERE; */
+  	/*grid-column: 1 / -1;*/
+  	/*grid-row: 1 / span 1;*/
+  	background-image: url(../images/parallex-img-mobile.png);
+  	background-repeat: no-repeat;
   }
 
 	.fun-fact img {
@@ -542,7 +564,21 @@ nav a:visited {
 	}	
 
 
+}
 
+/*prefers reduced motion changes*/
+@media screen and (prefers-reduced-motion: reduce) {
+    #welcome-text {
+        animation-name: none;
+    }
+
+    .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+    	transform: none ;
+    }
+
+    #paralax-image {  
+		background-attachment: local; /* Parallax effect */
+  }
 
 }
 
